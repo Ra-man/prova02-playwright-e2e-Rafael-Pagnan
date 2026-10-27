@@ -46,6 +46,6 @@ test.describe('UpQuery - Home', () => {
 
     // Assert
     await expect(page).toHaveURL(/\/contato\/?$/);
-    await expect(page.locator('form').first()).toBeVisible();
+await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   });
 });
